@@ -38,6 +38,7 @@ class Bot(object):
 						response_text = tree['say']
 					if 'answers' in tree:
 						possible_answers = tree['answers'].keys()
+						possible_answers.sort()
 					else: 
 						possible_answers = None 
 
